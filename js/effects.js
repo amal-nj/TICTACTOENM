@@ -11,8 +11,8 @@ function playerLost(){
 
     }
         $board.style.boxShadow="5px 20px 20px #dfb912ea";
-        $board.style.backgroundImage='url("skull.jpg")';
-},1000);
+        $board.style.backgroundImage='url("images/skull.jpg")';
+},2000);
 }
 
 var index=0;

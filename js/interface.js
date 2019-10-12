@@ -18,7 +18,8 @@ function createBoard(){
 
 function showMove(){
     this.querySelector("span").innerText="o";
-    this.style.backgroundImage='url("white face.png")';
+
+    this.style.backgroundImage='url("images/white face.png")';
     if(checkForWinner(boardArray())){
         win++;
         updateScore();
@@ -36,7 +37,7 @@ function computerTurn(){
     console.log(boardArray());
     console.log("result: "+result);
     document.getElementById(result).querySelector("span").innerText="x";
-    document.getElementById(result).style.backgroundImage='url("face.png")';
+    document.getElementById(result).style.backgroundImage='url("images/face.png")';
     
     if(checkForWinner(boardArray())){
         lose++;

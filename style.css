@@ -29,7 +29,8 @@ body{
     font-size: 28px;
     margin:10px;
     box-shadow: 5px 10px 20px #dfb912ea;
-    transition: 3s all;
+    transition:3s all;
+    background-image: none;
     background-size:80%;
     background-repeat: no-repeat;
     background-position: center;
