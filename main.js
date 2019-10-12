@@ -50,16 +50,81 @@ function checkEnd(boardState){
     return true;
 }
 
-console.log(checkForWinner(testBoard));
+// console.log(checkForWinner(testBoard));
 var max=true;
 var min=false;
-function minimaxPrune(boardState,depth,alpha,beta,player){
+
+// function minimaxPrune(boardState,depth,alpha,beta,player){
+//     if(checkForWinner(boardState)){
+//         return [checkForWinner(boardState)];
+//     }
+//     else if(checkEnd(boardState)||depth==0){
+//         return [0];
+//     }
+//     else if (player){//player is max
+//         let maxEval=-Infinity ;
+//         let winningMove;
+//         for(let i=0;i<boardState.length;i++){
+//             if(boardState[i]==a){//if this index is empty
+//                 let cloneBoard=[...boardState];
+//                 cloneBoard[i]=x;
+//                 //should return an array: [estimated move value, index of move, pruneVar]
+//                 let eval=minimaxPrune(cloneBoard,depth-1,alpha,beta,min);
+//                 if(eval[0]>maxEval){
+//                     winningMove=i;
+//                 }
+//                 maxEval=Math.max(eval[0], maxEval);
+//                 alpha=Math.max(eval[0],alpha);
+//                 if(alpha>=beta || eval[0]==1){
+//                     break;
+//                 }
+//             }
+//         }
+//         console.log([depth*maxEval,winningMove,alpha]);
+//         return [depth*maxEval,winningMove,alpha];
+
+//     }
+//     else{//player is min
+//         let minEval=Infinity ;
+//         let winningMove;
+//         for(let i=0;i<boardState.length;i++){
+//             if(boardState[i]==a){//if this index is empty
+//                 let cloneBoard=[...boardState];
+//                 cloneBoard[i]=x;
+//                 //should return an array: [estimated move value, index of move, pruneVar]
+//                 let eval=minimaxPrune(cloneBoard,depth-1,alpha,beta,max);
+//                 if(eval[0]<minEval){
+//                     winningMove=i;
+//                 }
+//                 minEval=Math.min(eval[0], minEval);
+//                 beta=Math.min(eval[0],beta);
+//                 if(alpha>=beta || eval[0]==-1){
+//                     break;
+//                 }
+//             }
+//         }
+//         console.log([depth*minEval,winningMove,beta]);
+//         return [depth*minEval,winningMove,beta];
+
+//     }
+
+
+// }
+
+// console.log(testBoard);
+// // console.log(minimaxPrune(testBoard,6,-Infinity,Infinity,max));
+// testBoard[minimaxPrune(testBoard,6,-Infinity,Infinity,max)[1]]=x;
+// console.log(testBoard);
+
+//minimax ONLY
+function minimax(boardState,player){
     if(checkForWinner(boardState)){
         return [checkForWinner(boardState)];
     }
-    else if(checkEnd(boardState)||depth==0){
+    else if(checkEnd(boardState)){
         return [0];
     }
+    
     else if (player){//player is max
         let maxEval=-Infinity ;
         let winningMove;
@@ -68,50 +133,37 @@ function minimaxPrune(boardState,depth,alpha,beta,player){
                 let cloneBoard=[...boardState];
                 cloneBoard[i]=x;
                 //should return an array: [estimated move value, index of move, pruneVar]
-                let eval=minimaxPrune(cloneBoard,depth-1,alpha,beta,min);
+                let eval=minimax(cloneBoard,min);
                 if(eval[0]>maxEval){
-                    winningMove=i;
+                     winningMove=i;
+                     maxEval=eval[0];
+
                 }
-                maxEval=Math.max(eval[0], maxEval);
-                alpha=Math.max(eval[0],alpha);
-                if(alpha>=beta || eval[0]==1){
-                    break;
-                }
-            }
+
+            }         
         }
-        console.log([depth*maxEval,winningMove,alpha]);
-        return [depth*maxEval,winningMove,alpha];
+         return [maxEval,winningMove];
+         //we multiply by two as an indicator that this solution went through more levels than other solutions
 
     }
-    else{//player is min
+    else{
         let minEval=Infinity ;
         let winningMove;
         for(let i=0;i<boardState.length;i++){
             if(boardState[i]==a){//if this index is empty
                 let cloneBoard=[...boardState];
-                cloneBoard[i]=x;
+                cloneBoard[i]=o;
                 //should return an array: [estimated move value, index of move, pruneVar]
-                let eval=minimaxPrune(cloneBoard,depth-1,alpha,beta,max);
+                let eval=minimax(cloneBoard,max);
                 if(eval[0]<minEval){
-                    winningMove=i;
-                }
-                minEval=Math.min(eval[0], minEval);
-                beta=Math.min(eval[0],beta);
-                if(alpha>=beta || eval[0]==-1){
-                    break;
-                }
-            }
-        }
-        console.log([depth*minEval,winningMove,beta]);
-        return [depth*minEval,winningMove,beta];
+                     winningMove=i;
+                     minEval=eval[0];
 
+                }
+
+            }         
+        }
+         return [minEval,winningMove];
     }
 
-
 }
-console.log(testBoard);
-// console.log(minimaxPrune(testBoard,6,-Infinity,Infinity,max));
-testBoard[minimaxPrune(testBoard,6,-Infinity,Infinity,max)[1]]=x;
-console.log(testBoard);
-
-
