@@ -7,6 +7,8 @@ function playerLost(){
         $square.style.boxShadow="none";
         $square.style.backgroundColor="transparent";
         $square.style.backgroundImage="none";
+        full[i]=true;
+
 
 
     }
@@ -17,15 +19,15 @@ function playerLost(){
 
 var index=0;
 var colors=["#DB162F"," #f5dd09ea","#C7FFDA"];
-var shadow=["rgb(165, 8, 29)","dfb912ea","rgb(152, 219, 175)"];
-// setInterval(changeColor,10000);
+var shadow=["#be1229","#dfb912ea","#9fccae"];
+//setInterval(changeColor,10000);
 function changeColor(){
    
     document.querySelector("body").style.backgroundColor=colors[index];
     for(let i=0;i<squares;i++){
         let $square=document.getElementById(i);
         $square.style.backgroundColor=colors[index];
-        $square.style.boxShadow="5px 10px 20px"+shadow[index];
+        $square.style.boxShadow="5px 10px 20px "+shadow[index];
     }
     index++;
     if(index==colors.length){
@@ -45,5 +47,20 @@ function newGame(){
     }
         $board.style.boxShadow="none";
         $board.style.backgroundImage='none';
+
+}
+
+function itTie(){
+    let $board=document.querySelector(".board");
+    for(let i=0;i<squares;i++){
+        let $square=document.getElementById(i);
+        $square.style.backgroundColor="rgba(240, 240, 240, 0.4)";
+    }
+    setTimeout(function(){
+    for(let i=0;i<squares;i++){
+        let $square=document.getElementById(i);
+        $square.style.backgroundColor=" #f5dd09ea";
+    }},3000);
+       
 
 }

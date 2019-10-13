@@ -2,6 +2,9 @@
 body{
     background-color: #f5dd09ea;
     transition: 3s all;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    margin-top:20px;
 
 }
 .board{
@@ -39,3 +42,41 @@ body{
 .grid span{
     display:none;
 } 
+
+.grid:hover{
+    background-color: #e6be0eea;
+    transition: 0.2s all;
+
+}
+#reset{
+    border: none;
+    position: absolute;
+    top:85%;
+    left:50%;
+    transform:translateX(-50%);
+    background-color: transparent;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    /* border: 2px solid black; */
+    font-weight: 700;
+}
+#reset:hover{
+    box-shadow: 5px 10px 20px #dfb912ea;
+    background-color: rgba(240, 240, 240, 0.4);
+    transition: 0.2s all;
+    
+}
+#score,#player,#ties{
+    width: 40%;
+    margin:auto;
+    /* border: 2px solid black; */
+    color:white;
+}
+
+h4 span{
+    color:black;
+}
+h1,h4{
+    margin:6px;
+}

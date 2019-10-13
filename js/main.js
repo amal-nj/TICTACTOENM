@@ -1,4 +1,4 @@
-
+var branches=0;
 //board state for tests
 var x="x";
 var o="o";
@@ -129,6 +129,7 @@ function minimax(boardState,player){
         let maxEval=-Infinity ;
         let winningMove;
         for(let i=0;i<boardState.length;i++){
+            branches++;
             if(boardState[i]==a){//if this index is empty
                 let cloneBoard=[...boardState];
                 cloneBoard[i]=x;
@@ -139,7 +140,9 @@ function minimax(boardState,player){
                      maxEval=eval[0];
 
                 }
-
+                if(eval[0]==1){
+                    break;
+                }
             }         
         }
          return [maxEval,winningMove];
@@ -150,6 +153,8 @@ function minimax(boardState,player){
         let minEval=Infinity ;
         let winningMove;
         for(let i=0;i<boardState.length;i++){
+            branches++;
+
             if(boardState[i]==a){//if this index is empty
                 let cloneBoard=[...boardState];
                 cloneBoard[i]=o;
@@ -160,6 +165,9 @@ function minimax(boardState,player){
                      minEval=eval[0];
 
                 }
+                if(eval[0]==-1){
+                    break;
+                }
 
             }         
         }
@@ -167,3 +175,4 @@ function minimax(boardState,player){
     }
 
 }
+
