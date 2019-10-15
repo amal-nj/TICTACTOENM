@@ -18,8 +18,8 @@ function playerLost(){
 }
 
 var index=0;
-var colors=["#DB162F"," #f5dd09ea","#C7FFDA"];
-var shadow=["#be1229","#dfb912ea","#9fccae"];
+var colors=["#DB162F"," #f5dd09ea","#F8EFE4"];
+var shadow=["#be1229","#dfb912ea","#e6d9c6"];
 //setInterval(changeColor,10000);
 function changeColor(){
    
