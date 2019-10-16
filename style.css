@@ -8,6 +8,38 @@ body{
     /* color:#2e1910ea; */
 
 }
+.start-page{
+
+}
+.main-game{
+    display: none;
+}
+
+.start-board{
+    padding-top: 50%;
+    color: black;
+    margin:auto;
+   
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: 0.2s all;
+ 
+    width:500px;
+    height:500px;
+    box-shadow: 5px 10px 20px #dfb912ea;
+
+
+
+
+}
+
+.start-board h1{
+    font-size: 40px;
+    text-shadow: 0px 2px 4px #dfb912ea;
+    /* font-family: 'Indie Flower', cursive; */
+}
 .board{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -68,7 +100,7 @@ body{
     transition: 0.2s all;
     
 }
-#score,#player,#ties{
+.score,.player,.ties{
     width: 40%;
     margin:auto;
     /* border: 2px solid black; */
@@ -81,3 +113,104 @@ h4 span{
 h1,h4{
     margin:6px;
 }
+
+/* the drop down menu style here is outsourced from https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+
+
+  
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropup {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropup-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    bottom: 50px;
+    z-index: 1;
+  }
+  
+  .dropup-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropup-content a:hover {background-color: #ccc}
+  
+  .dropup:hover .dropup-content {
+    display: block;
+  }
+  
+  .dropup:hover .dropbtn {
+    background-color: #2980B9;
+  }
+/* end of outsourced part */
+  .icon img{
+      width:50px;
+      height:50px;
+      margin: 2px;
+  }
+
+  .icon{
+      display: none;
+  }
+
+ .icon-link{
+     display: block;
+ }
+
+ .icon-link img:hover{
+     background-color: white;
+     border-radius: 3px;
+ }
