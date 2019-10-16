@@ -4,13 +4,13 @@ var lose=0;
 var tie=0;
 var full=[];
 var currentPlayer=true;
-function showBoard(mode,size){
+function showBoard(mode){
 
 
 createBoard();
 function createBoard(){
     showGamePage();
-    setGrid();
+    // setGrid();
     let $board=document.querySelector(".board");
     for(let i=0;i<squares;i++){
         let $square=document.createElement("div");
@@ -21,6 +21,9 @@ function createBoard(){
         $square.setAttribute("id",i);
         $square.addEventListener('click',showMove);
         $board.appendChild($square);
+        setTimeout(function(){
+        $square.style.margin="10px";
+        },100);
         full.push(false);
     }
 }
@@ -126,19 +129,19 @@ function showGamePage(){
 
 }
 
-function setGrid(){
-    if(size=="3x3"){
-        squares=9;
-    }
-    else if(size=="5x5"){
-        console.log($(".grid"));
-        console.log($(".board"));
+// function setGrid(){
+//     if(size=="3x3"){
+//         squares=9;
+//     }
+//     else if(size=="5x5"){
+//         console.log($(".grid"));
+//         console.log($(".board"));
         
-        $(".board").css({"grid-template-columns": "1fr 1fr 1fr 1fr 1fr","grid-template-rows": "1fr 1fr 1fr 1fr 1fr"});
-        squares=25;
-    }else{
+//         $(".board").css({"grid-template-columns": "1fr 1fr 1fr 1fr 1fr","grid-template-rows": "1fr 1fr 1fr 1fr 1fr"});
+//         squares=25;
+//     }else{
 
-    }
+//     }
 
-}
+// }
 }
