@@ -1,138 +1,130 @@
-
-body{
-    background-color: #f5dd09ea;
-    transition: 3s all;
-    font-family: 'Ubuntu', sans-serif;
-    text-align: center;
-    margin-top:20px;
-    /* color:#2e1910ea; */
-
+body {
+  /* background-color: #f5dd09ea; */
+  transition: 3s all;
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+  margin-top: 20px;
+  /* color:#2e1910ea; */
+  background-image: radial-gradient(circle,  rgb(245,221,9), rgb(245,221,9), #dfb912ea);
 }
-.start-page{
-
+.start-page {
 }
-.main-game{
-    display: none;
+.main-game {
+  display: none;
 }
 
-.start-board{
-    /* padding-top: 100px; */
-    color: black;
-    margin:auto;
-    display: initial;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    transition: 2s all;
- 
-    width:500px;
-    height:500px;
-    /* background: rgba(240, 240, 240, 0.6); */
-    box-shadow: 5px 10px 20px #dfb912ea;
+.start-board {
+  /* padding-top: 100px; */
+  color: black;
+  margin: auto;
+  display: initial;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 2s all;
 
-
-
-
+  width: 500px;
+  height: 500px;
+  /* background: rgba(240, 240, 240, 0.6); */
+  /* box-shadow: 5px 10px 20px #dfb912ea; */
 }
 
-.start-board h1{
-    position: relative;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    font-size: 40px;
-    text-shadow: 0px 2px 4px #dfb912ea;
-    /* font-family: 'Indie Flower', cursive; */
-}
-
-.st-btn{
+.start-board h1 {
   position: relative;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  text-shadow: 0px 2px 4px #dfb912ea;
+  /* font-family: 'Indie Flower', cursive; */
 }
 
-.start{
+.st-btn {
+  position: relative;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.start {
   position: relative;
   top: 60%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
-.board{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr; 
-    margin:auto;
-   
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    transition: 3s all;
-    /* background-image: url(skull.jpg); */
-    background-size: cover;
+.board {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin: auto;
 
-}
-
-.grid{
-    width:100px;
-    height: 100px;
-    background-color: #f5dd09ea;
-    /* border: 1px solid black; */
-    padding: auto;
-    font-size: 28px;
-    margin:0px;
-    box-shadow: 5px 10px 20px #dfb912ea;
-    transition:3s all;
-    background-image: none;
-    background-size:80%;
-    background-repeat: no-repeat;
-    background-position: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 3s all;
+  /* background-image: url(skull.jpg); */
+  background-size: cover;
 }
 
-.grid span{
-    display:none;
-} 
-
-.grid:hover{
-    background-color: #e6be0eea;
-    transition: 0.2s all;
-
-}
-#reset{
-    border: none;
-    position: absolute;
-    top:85%;
-    left:50%;
-    transform:translateX(-50%);
-    background-color: transparent;
-    padding: 10px 30px;
-    font-size: 20px;
-    font-family: 'Ubuntu', sans-serif;
-    /* border: 2px solid black; */
-    font-weight: 700;
-}
-#reset:hover{
-    box-shadow: 5px 10px 20px #dfb912ea;
-    background-color: rgba(240, 240, 240, 0.4);
-    transition: 0.2s all;
-    
-}
-.score,.player,.ties{
-    width: 40%;
-    margin:auto;
-    /* border: 2px solid black; */
-    /* color:white; */
+.grid {
+  width: 100px;
+  height: 100px;
+  background-color: #f5dd09ea;
+  /* border: 1px solid black; */
+  padding: auto;
+  font-size: 28px;
+  margin: 0px;
+  box-shadow: 5px 10px 20px #dfb912ea;
+  transition: 3s all;
+  background-image: none;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-h4 span{
-    color:white;
-
+.grid span {
+  display: none;
 }
-h1,h4{
-    margin:6px;
+
+.grid:hover {
+  background-color: #e6be0eea;
+  transition: 0.2s all;
+}
+#reset {
+  border: none;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: transparent;
+  padding: 10px 30px;
+  font-size: 20px;
+  font-family: "Ubuntu", sans-serif;
+  /* border: 2px solid black; */
+  font-weight: 700;
+}
+#reset:hover {
+  box-shadow: 5px 10px 20px #dfb912ea;
+  background-color: rgba(240, 240, 240, 0.4);
+  transition: 0.2s all;
+}
+.score,
+.player,
+.ties {
+  width: 40%;
+  margin: auto;
+  /* border: 2px solid black; */
+  /* color:white; */
+}
+
+h4 span {
+  color: white;
+}
+h1,
+h4 {
+  margin: 6px;
 }
 
 /* the drop down menu style here is outsourced from https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button */
@@ -144,120 +136,121 @@ h1,h4{
     border: none;
     cursor: pointer;
   } */
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 10;
-    
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdown-content a:hover {background-color: #f1f1f1}
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  .dropdown:hover .dropbtn {
-    box-shadow: 5px 10px 20px #dfb912ea;
-  }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
 
-  
-.dropbtn,#instructions {
-    background-color:  rgba(240, 240, 240, 0.4);
-    color:black;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    font-weight: 500;
-    font-family: 'Ubuntu', sans-serif;
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
 
-  }
-  
-  .dropup {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropup-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    bottom: 50px;
-    z-index: 1;
-  }
-  
-  .dropup-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropup-content a:hover {background-color: #ccc}
-  
-  .dropup:hover .dropup-content {
-    display: block;
-  }
-  
-  .dropup:hover .dropbtn {
-    box-shadow: 5px 10px 20px #dfb912ea;
-  }
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  box-shadow: 5px 10px 20px #dfb912ea;
+}
+
+.dropbtn,
+#instructions {
+  background-color: rgba(240, 240, 240, 0.4);
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  font-weight: 500;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.dropup {
+  position: relative;
+  display: inline-block;
+}
+
+.dropup-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  bottom: 50px;
+  z-index: 1;
+}
+
+.dropup-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropup-content a:hover {
+  background-color: #ccc;
+}
+
+.dropup:hover .dropup-content {
+  display: block;
+}
+
+.dropup:hover .dropbtn {
+  box-shadow: 5px 10px 20px #dfb912ea;
+}
 /* end of outsourced part */
-  .icon img{
-      width:50px;
-      height:50px;
-      margin: 2px;
-  }
+.icon img {
+  width: 50px;
+  height: 50px;
+  margin: 2px;
+}
 
-  .icon{
-      display: none;
-  }
+.icon {
+  display: none;
+}
 
- .icon-link{
-     display: block;
- }
+.icon-link {
+  display: block;
+}
 
- .icon-link img:hover{
-     background-color: white;
-     border-radius: 3px;
- }
-.start{
+.icon-link img:hover {
+  background-color: white;
+  border-radius: 3px;
+}
+.start {
   z-index: -1;
 }
- #start{
+#start {
   border: none;
   position: absolute;
-  top:85%;
-  left:50%;
-  transform:translate(-50%,-50%);
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: transparent;
   padding: 10px 30px;
   font-size: 20px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   /* border: 2px solid black; */
   font-weight: 700;
 }
-#start:hover,#instructions:hover{
+#start:hover,
+#instructions:hover {
   box-shadow: 5px 10px 20px #dfb912ea;
   background-color: rgba(240, 240, 240, 0.4);
   transition: 0.2s all;
-  
 }

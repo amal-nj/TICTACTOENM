@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>TicTacToe</title>
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="start-page">
         <div class="start-board">
@@ -23,79 +26,78 @@
 
                 <button id="instructions">Instructions</button>
                 <div class="dropup">
-                        <button class="dropbtn">Customise Icons</button>
-                        <div class="dropup-content">
+                    <button class="dropbtn">Customise Icons</button>
+                    <div class="dropup-content">
                         <a class="icon-link" href="#">
                             <h4>Player 1</h4>
 
-                                <div class="icon" id="player1Icon">
-                                        <img src="images/face.png" alt="">
-                                        <img src="images/red face.png" alt="">
-                                        <img src="images/Skull.png" alt="">
-                                        <img src="images/smile.png" alt="">
-                                        <img src="images/angry.png" alt="">
-                                        <img src="images/what.png" alt="">
-
-
-
-                                </div>
+                            <div class="icon" id="player1Icon">
+                                <img src="images/face.png" alt="">
+                                <img src="images/red face.png" alt="">
+                                <img src="images/Skull.png" alt="">
+                                <img src="images/smile.png" alt="">
+                                <img src="images/angry.png" alt="">
+                                <img src="images/what.png" alt="">
+                            </div>
                         </a>
-                        
+
                         <a class="icon-link" href="#">
-                                <h4>Player 2</h4>
+                            <h4>Player 2</h4>
 
-                                <div class="icon" id="player2Icon">
-                                        <img src="images/face.png" alt="">
-                                        <img src="images/red face.png" alt="">
-                                        <img src="images/Skull.png" alt="">
-                                        <img src="images/smile.png" alt="">
-                                        <img src="images/angry.png" alt="">
-                                        <img src="images/what.png" alt="">
-
-                                    </div>
+                            <div class="icon" id="player2Icon">
+                                <img src="images/face.png" alt="">
+                                <img src="images/red face.png" alt="">
+                                <img src="images/Skull.png" alt="">
+                                <img src="images/smile.png" alt="">
+                                <img src="images/angry.png" alt="">
+                                <img src="images/what.png" alt="">
+                            </div>
                         </a>
-                        
+
                         <a class="icon-link" href="#">
-                                <h4>Computer</h4>
+                            <h4>Computer</h4>
 
-                                <div class="icon" id="computerIcon">
-                                        <img src="images/face.png" alt="">
-                                        <img src="images/red face.png" alt="">
-                                        <img src="images/Skull.png" alt="">
-                                        <img src="images/smile.png" alt="">
-                                        <img src="images/angry.png" alt="">
-                                        <img src="images/what.png" alt="">
-
-                                </div>
+                            <div class="icon" id="computerIcon">
+                                <img src="images/face.png" alt="">
+                                <img src="images/red face.png" alt="">
+                                <img src="images/Skull.png" alt="">
+                                <img src="images/smile.png" alt="">
+                                <img src="images/angry.png" alt="">
+                                <img src="images/what.png" alt="">
+                            </div>
                         </a>
-                        
-                        </div>
+
+                    </div>
                 </div>
             </div>
             <div class="start">
-            <button id="start">START</button>
+                <button id="start">START</button>
             </div>
         </div>
-           
+
     </div>
     <div class="main-game">
         <h1>Tic Tac Toe</h1>
         <div id="score">
-        <h4 id="score-single">Player: <span class="player">0</span> | <span>Computer: <span class="computer">0</span></span> | Ties: <span class="ties">0</span></h4>
-        <h4 id="score-multi">Player 1: <span class="player">0</span> | <span>Player 2: <span class="computer">0</span></span> | Ties: <span class="ties">0</span></h4>
-        
-    </div>
+            <h4 id="score-single">Player: <span class="player">0</span> | <span>Computer: <span
+                        class="computer">0</span></span> | Ties: <span class="ties">0</span></h4>
+            <h4 id="score-multi">Player 1: <span class="player">0</span> | <span>Player 2: <span
+                        class="computer">0</span></span> | Ties: <span class="ties">0</span></h4>
+
+        </div>
         <div class="board">
-    
+
         </div>
         <button id="reset">RESET</button>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.js" crossorigin="anonymous"></script>   <!-- JQuery link must go before our script -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js" crossorigin="anonymous"></script>
+    <!-- JQuery link must go before our script -->
     <script src="js/start.js"></script>
     <script src="js/interface.js"></script>
     <script src="js/effects.js"></script>
     <script src="js/main.js"></script>
 
 </body>
+
 </html>
