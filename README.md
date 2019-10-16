@@ -1,10 +1,8 @@
 # Tic Tac Toe
 
-One Paragraph of project description goes here
-
 ## Description
 
-This project is an implementation of the popular game tic tac toe through code. The game can be played in single mode or in multiplayer mode. In the single mode the player’s opponent is am implementation of the minimax algorithm which makes winning impossible. 
+This project is an implementation of the popular game tic tac toe in the form of a web game. The game can be played in single mode or in multiplayer mode. In the single mode the player’s opponent is an implementation of the minimax algorithm which makes winning impossible. 
 
 ### Technical Used
 ```
@@ -21,30 +19,30 @@ JavaScript for DOM manipulation
 
 
 ### User Stories
-
-A story of the project user, that explains the use of the project.
+As an internet user with lots of free time in my hands, I like to occasionally play nostalgic games like Tic Tac Toe online. I often choose the single player mode since playing with an AI can sometime be more interesting. However, I like to play with a friend from time to time using the multiplayer mode. This way, I can pass some time playing something I enjoy.
+//I tried :')
 
 ---
 
 ## Planning and Development Process
+    - Worked on making the initial layout.
+    - Applied the minimax algorithm and modified it to be suitable for this specific problem.
+    - Worked on styling the main page.
+    - Added a landing page with a multiplayer option and a few icon options.
+    - Finalized the code.
 
-A basic story of your planning and developing this project.
 
 ### Problem-Solving Strategy
-
-What strategy did you use to solve your problems.
+problems were usually solved with the aid of the information provided by the console in addtion to a few console.log statments that were added when needed.
 
 ### Unsolved problems
 
-non.
 
 ---
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* The basic styling of the drop-up and drop-down buttons were taken from https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button
 
 ---
 

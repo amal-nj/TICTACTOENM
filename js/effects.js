@@ -46,6 +46,9 @@ function newGame() {
 }
 
 function itTie() {
+
+  Swal.fire("It's a tie");
+
   let $board = document.querySelector(".board");
   for (let i = 0; i < squares; i++) {
     let $square = document.getElementById(i);
@@ -57,4 +60,6 @@ function itTie() {
       $square.style.backgroundColor = " #f5dd09ea";
     }
   }, 3000);
+
+
 }

@@ -37,8 +37,12 @@ function showBoard(mode) {
       if (checkForWinner(boardArray())) {
         if (currentPlayer) {
           win++;
+          Swal.fire('Player 1 Wins!');
+
         } else {
           lose++;
+          Swal.fire('Player 2 Wins!');
+
         }
         updateScore();
       } else if (checkEnd(boardArray())) {
@@ -123,19 +127,5 @@ function showBoard(mode) {
     }
   }
 
-  // function setGrid(){
-  //     if(size=="3x3"){
-  //         squares=9;
-  //     }
-  //     else if(size=="5x5"){
-  //         console.log($(".grid"));
-  //         console.log($(".board"));
-
-  //         $(".board").css({"grid-template-columns": "1fr 1fr 1fr 1fr 1fr","grid-template-rows": "1fr 1fr 1fr 1fr 1fr"});
-  //         squares=25;
-  //     }else{
-
-  //     }
-
-  // }
+ 
 }
