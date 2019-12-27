@@ -13,8 +13,8 @@ JavaScript for DOM manipulation
 
 ### Wireframes
 
-![alt text](images/WFStartPage.png)
-![alt text](images/WFGame.png)
+![Start page wireframe](./images/WFStartPage.png)
+![game wireframe](./images/WFGame.png)
 
 
 
