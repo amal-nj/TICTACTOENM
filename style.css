@@ -1,16 +1,46 @@
 body {
-  /* background-color: #f5dd09ea; */
+  /* background-color: #FFCD1B; */
   transition: 3s all;
   font-family: "Ubuntu", sans-serif;
   text-align: center;
   margin-top: 20px;
   /* color:#2e1910ea; */
-  background-image: radial-gradient(circle,  rgb(245,221,9), rgb(245,221,9), #dfb912ea);
+  background-color: #EBDFC5;
+  background-image: url("images/g8.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+
+}
+
+.main-content {
+  /* background-color: #FFCD1B; */
+  transition: 3s all;
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+
+  /* color:#2e1910ea; */
+  width: 70%;
+  height: 80%;
+  background-color: #EBDFC5;
+  display: initial;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px;
+
+
 }
 .start-page {
 }
 .main-game {
   display: none;
+    /* width: 70%;
+  height: 100%; */
+  /* background: rgba(240, 240, 240, 0.6); */
+  /* box-shadow: 5px 10px 20px #dfb912ea; */
+  background-color:  #1A1A18;
+  color: F9F8F3;
 }
 
 .start-board {
@@ -24,8 +54,11 @@ body {
   transform: translate(-50%, -50%);
   transition: 2s all;
 
-  width: 500px;
-  height: 500px;
+  width: 70%;
+  height: 100%;
+  /* background: rgba(240, 240, 240, 0.6); */
+  /* box-shadow: 5px 10px 20px #dfb912ea; */
+  background-color:  #1A1A18;
   /* background: rgba(240, 240, 240, 0.6); */
   /* box-shadow: 5px 10px 20px #dfb912ea; */
 }
@@ -35,8 +68,17 @@ body {
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 40px;
-  text-shadow: 0px 2px 4px #dfb912ea;
+  font-size:  7rem;
+  color: #F9F8F3;
+  /* text-shadow: 0px 2px 4px #FFB81C; */
+  /* font-family: 'Indie Flower', cursive; */
+}
+
+.main-content h1 {
+ 
+  font-size:  4rem;
+  color: #F9F8F3;
+  /* text-shadow: 0px 2px 4px #FFB81C; */
   /* font-family: 'Indie Flower', cursive; */
 }
 
@@ -66,17 +108,20 @@ body {
   transition: 3s all;
   /* background-image: url(skull.jpg); */
   background-size: cover;
+  padding: 20px;
+  background-color: #FFCD1B;
+  box-shadow: 5px 10px 20px black;
 }
 
 .grid {
   width: 100px;
   height: 100px;
-  background-color: #f5dd09ea;
+  background-color: #FFCD1B;
   /* border: 1px solid black; */
   padding: auto;
   font-size: 28px;
   margin: 0px;
-  box-shadow: 5px 10px 20px #dfb912ea;
+  box-shadow: 5px 10px 20px #FFB81C;
   transition: 3s all;
   background-image: none;
   background-size: 80%;
@@ -89,7 +134,7 @@ body {
 }
 
 .grid:hover {
-  background-color: #e6be0eea;
+  background-color: #FFB81C;
   transition: 0.2s all;
 }
 #reset {
@@ -98,7 +143,7 @@ body {
   top: 85%;
   left: 50%;
   transform: translateX(-50%);
-  background-color: transparent;
+  background-color: #F9F8F3;
   padding: 10px 30px;
   font-size: 20px;
   font-family: "Ubuntu", sans-serif;
@@ -106,7 +151,7 @@ body {
   font-weight: 700;
 }
 #reset:hover {
-  box-shadow: 5px 10px 20px #dfb912ea;
+  box-shadow: 5px 10px 20px black;
   background-color: rgba(240, 240, 240, 0.4);
   transition: 0.2s all;
 }
@@ -129,7 +174,7 @@ h4 {
 
 /* the drop down menu style here is outsourced from https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button */
 /* .dropbtn {
-    background-color:#e6be0eea;
+    background-color:#FFB81C;
     color: black;
     padding: 16px;
     font-size: 16px;
@@ -145,7 +190,7 @@ h4 {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #F9F8F3;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 10;
@@ -167,7 +212,7 @@ h4 {
 }
 
 .dropdown:hover .dropbtn {
-  box-shadow: 5px 10px 20px #dfb912ea;
+  box-shadow: 5px 10px 20px black;
 }
 
 .dropbtn,
@@ -203,7 +248,7 @@ h4 {
 }
 
 .dropup-content a:hover {
-  background-color: #ccc;
+  background-color: #F9F8F3;
 }
 
 .dropup:hover .dropup-content {
@@ -211,7 +256,7 @@ h4 {
 }
 
 .dropup:hover .dropbtn {
-  box-shadow: 5px 10px 20px #dfb912ea;
+  box-shadow: 5px 10px 20px black;
 }
 /* end of outsourced part */
 .icon img {
@@ -241,7 +286,7 @@ h4 {
   top: 85%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: transparent;
+  background-color: #F9F8F3;
   padding: 10px 30px;
   font-size: 20px;
   font-family: "Ubuntu", sans-serif;
@@ -250,7 +295,7 @@ h4 {
 }
 #start:hover,
 #instructions:hover {
-  box-shadow: 5px 10px 20px #dfb912ea;
+  box-shadow: 5px 10px 20px black;
   background-color: rgba(240, 240, 240, 0.4);
   transition: 0.2s all;
 }

@@ -45,10 +45,12 @@ function showBoard(mode) {
 
         }
         updateScore();
+        resetBoard();
       } else if (checkEnd(boardArray())) {
         tie++;
         updateScore();
         itTie();
+        resetBoard();
       } else {
         mode == "single" ? computerTurn() : "";
       }
@@ -119,7 +121,7 @@ function showBoard(mode) {
 
   function showGamePage() {
     document.querySelector(".start-page").style.display = "none";
-    document.querySelector(".main-game").style.display = "initial";
+    document.querySelector(".main-game").style.display = "block";
     if (mode == "single") {
       document.getElementById("score-multi").style.display = "none";
     } else {

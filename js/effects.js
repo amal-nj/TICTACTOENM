@@ -9,14 +9,14 @@ function playerLost() {
       $square.style.backgroundImage = "none";
       full[i] = true;
     }
-    $board.style.boxShadow = "5px 20px 20px #dfb912ea";
+    $board.style.boxShadow = "5px 10px 20px black";
     $board.style.backgroundImage = 'url("images/skull.jpg")';
   }, 2000);
 }
 
 var index = 0;
-var colors = ["#DB162F", " #f5dd09ea", "#F8EFE4"];
-var shadow = ["#be1229", "#dfb912ea", "#e6d9c6"];
+var colors = ["#DB162F", " #FFCD1B", "#F8EFE4"];
+var shadow = ["#be1229", "#FFB81C", "#e6d9c6"];
 //setInterval(changeColor,10000);
 
 //function is not actually used
@@ -38,8 +38,8 @@ function newGame() {
   for (let i = 0; i < squares; i++) {
     let $square = document.getElementById(i);
     $square.style.margin = 10 + "px";
-    $square.style.boxShadow = "5px 10px 20px #dfb912ea";
-    $square.style.backgroundColor = "#f5dd09ea";
+    $square.style.boxShadow = "5px 10px 20px #FFB81C";
+    $square.style.backgroundColor = "#FFCD1B";
   }
   $board.style.boxShadow = "none";
   $board.style.backgroundImage = "none";
@@ -57,7 +57,7 @@ function itTie() {
   setTimeout(function() {
     for (let i = 0; i < squares; i++) {
       let $square = document.getElementById(i);
-      $square.style.backgroundColor = " #f5dd09ea";
+      $square.style.backgroundColor = " #FFCD1B";
     }
   }, 3000);
 
